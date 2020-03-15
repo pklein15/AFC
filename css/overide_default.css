@@ -24,6 +24,7 @@ div#back {
 
 #af_brand{
   height: 75px;
+  line-height: 0;
   padding-right: 5px;
 }
 
@@ -51,8 +52,16 @@ div#back {
 
 .col-sm {
   background-color: lightgray;
-  margin: 75px 20px;
-  padding: 20 !important;
+  margin: 50px 20px 0px 20px;
+  padding: 20px !important;
+}
+
+.sponsors {
+  margin:30px 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: gray;
+  width: 100%;
 }
 
 /* 

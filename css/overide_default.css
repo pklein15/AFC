@@ -1,0 +1,43 @@
+
+html {
+  margin: 0px;
+  border: 0;
+  padding: 0;
+}
+.btn-warning, .btn-warning:active,
+.btn-warning:visited, .btn-warning:focus,
+.btn-warning:active:focus {
+    background-color: #FC7E27;
+    border-color: #FC7E27}
+
+.btn-warning:hover {
+    background-color: #ea700c;
+    border-color: #ea700c}
+
+.img-max {
+      max-width: 500px;
+    }
+
+div#back {
+      display:none;
+    }
+
+#af_brand{
+  height: 75px;
+  padding-right: 5px;
+}
+
+div#front {
+      display:none;
+      }
+
+div#flip{
+  display:none;
+}
+
+/*  #ff8d00
+
+body{color:#ffffff;
+    background-color: #000000;
+*/
+

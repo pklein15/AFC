@@ -27,17 +27,29 @@ div#back {
   padding-right: 5px;
 }
 
-div#front {
-      display:none;
-      }
-
-div#flip{
-  display:none;
+.carousel-caption h3 {
+    font-weight: bold;
+    font-size: 1.2em; /* small size since this is the default in Bootstrap */
+    text-align:left;
 }
 
-/*  #ff8d00
-
-body{color:#ffffff;
-    background-color: #000000;
-*/
-
+.carousel-caption p {
+    font-size: 1em; /* small size since this is the default in Bootstrap */
+    text-align:left;
+}
+@media (min-width: 576px) { /*Small devices (landscape phones, 576px and up) */
+  .carousel-caption h3 { font-size: 1.3em;}
+  .carousel-caption p {font-size: 1.1em;}  
+}
+@media (min-width: 768px) {/* Medium devices (tablets, 768px and up) */
+  .carousel-caption h3 { font-size: 1.4em;}
+  .carousel-caption p {font-size: 1.2em;}  
+}
+@media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
+  .carousel-caption h3 { font-size: 1.5em;}
+  .carousel-caption p {font-size: 1.3em;}  
+}
+@media (min-width: 1200px) { /* Extra large devices (large desktops, 1200px and up) */
+  .carousel-caption h3 { font-size: 1.6em;}
+  .carousel-caption p {font-size: 1.4em;}  
+}  

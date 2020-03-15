@@ -27,6 +27,18 @@ div#back {
   padding-right: 5px;
 }
 
+
+.transbox {
+  margin: 30;
+  background-color:white;
+  opacity: .6;
+}
+
+.transbox p h3 {
+  margin: 5%;
+  color:black;
+}
+
 .carousel-caption h3 {
     font-weight: bold;
     font-size: 1.2em; 

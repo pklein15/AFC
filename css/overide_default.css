@@ -1,5 +1,5 @@
 
-html {
+body {
   margin: 0px;
   border: 0;
   padding: 0;
@@ -14,16 +14,18 @@ html {
     background-color: #ea700c;
     border-color: #ea700c}
 
-.img-max {
-      max-width: 500px;
-    }
-
-div#back {
-      display:none;
-    }
+.neg_margin {
+  margin-top: -55px;
+  margin-left: 50px;
+}
 
 .navbar-brand {
   margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.move-up {
+  background-color: green;
 }
 
 #af_brand{

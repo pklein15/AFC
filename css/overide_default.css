@@ -1,6 +1,8 @@
 
-.move-up {
-  margin-top: -100px;
+html {
+  margin: 0px;
+  border: 0;
+  padding: 0;
 }
 .btn-warning, .btn-warning:active,
 .btn-warning:visited, .btn-warning:focus,

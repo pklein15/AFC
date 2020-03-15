@@ -1,8 +1,6 @@
 
-html {
-  margin: 0px;
-  border: 0;
-  padding: 0;
+.move-up {
+  margin-top: -100px;
 }
 .btn-warning, .btn-warning:active,
 .btn-warning:visited, .btn-warning:focus,

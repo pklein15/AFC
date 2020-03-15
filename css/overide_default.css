@@ -22,12 +22,24 @@ div#back {
       display:none;
     }
 
+.navbar-brand {
+  margin-right: 0px;
+}
+
 #af_brand{
   height: 75px;
   line-height: 0;
-  padding-right: 5px;
 }
 
+
+/* .dropdown-menu {
+  border-radius: 0rem;
+
+} */
+
+.dropdown-item:hover {
+  background-color: gray;
+}
 
 .transbox {
   margin: 150;

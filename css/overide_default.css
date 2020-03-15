@@ -29,13 +29,13 @@ div#back {
 
 
 .transbox {
-  margin: 30;
+  margin: 150;
   background-color:white;
   opacity: .6;
 }
 
 .transbox p h3 {
-  margin: 5%;
+  margin: 10%;
   color:black;
 }
 

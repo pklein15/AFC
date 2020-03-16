@@ -3,6 +3,7 @@ body {
   margin: 0px;
   border: 0;
   padding: 0;
+  text-align: center;
 }
 .btn-warning, .btn-warning:active,
 .btn-warning:visited, .btn-warning:focus,
@@ -62,9 +63,17 @@ body {
 }
 
 .col-sm {
-  background-color: lightgray;
-  margin: 50px 20px 0px 20px;
-  padding: 20px !important;
+  position: relative;
+  text-align: center;
+  color:black;
+}
+
+.centered {
+  position: absolute;
+  font-size: 5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sponsors {

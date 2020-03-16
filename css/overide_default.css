@@ -25,16 +25,15 @@ body {
   margin-bottom: 20px;
 }
 
-
 #af_brand{
   height: 75px;
   line-height: 0;
 }
 
-
-/* .dropdown-menu {
+/* 
+.dropdown-menu {
   border-radius: 0rem;
-
+  text-align: right;
 } */
 
 .dropdown-item:hover {
@@ -64,13 +63,15 @@ body {
 
 .col-sm {
   position: relative;
+  font-weight: bold;
   text-align: center;
   color:black;
+  margin-bottom: 30px;
 }
 
 .centered {
   position: absolute;
-  font-size: 5em;
+  font-size: 3rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

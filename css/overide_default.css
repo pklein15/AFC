@@ -51,6 +51,12 @@ body {
   color:black;
 }
 
+.card-footer {
+  background: transparent;
+  border-top: 0px;
+  padding-bottom: 30px;
+}
+
 .carousel-caption h3 {
     font-weight: bold;
     font-size: 1.2em; 

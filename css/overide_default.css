@@ -40,9 +40,9 @@ body {
   background-color: gray;
 }
 
-.dropdown:hover>.dropdown-menu {
+/* .dropdown:hover>.dropdown-menu {
   display: block;
-}
+} */
 
 .transbox {
   margin: 150;

@@ -30,11 +30,12 @@ body {
   line-height: 0;
 }
 
-/* 
+
 .dropdown-menu {
-  border-radius: 0rem;
-  text-align: right;
-} */
+  /* border-radius: 0rem;
+  text-align: right; */
+  background-color: lightgray;
+}
 
 .dropdown-item:hover {
   background-color: gray;
@@ -42,7 +43,13 @@ body {
 
 /* .dropdown:hover>.dropdown-menu {
   display: block;
+} 
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
 } */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
 
 .transbox {
   margin: 150;

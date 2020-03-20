@@ -13,61 +13,12 @@
     <title>AF Cincinnati</title>
   </head>
   <body>
-    <img style="display:block;" src="/src/flapstrip.PNG" alt="flag" width="100%" height="15px"/>
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary ml-0">
-      
-      <a class="navbar-brand" href="#"  >
-        <img id='af_brand' src="/src/clearlogo2.png">
-        <div class="neg_margin">Alliance Française de Cincinnati</div>
-      </a>
 
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse ml-auto" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home &nbsp&nbsp<span class="sr-only">(current)</span></a>
-          
-          <li class="nav-item dropdown mr-3">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
-            <div class="dropdown-menu dropdown-menu mt-0" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Upcoming Events</a>
-              <a class="dropdown-item" href="#">Conversation Groups</a>
-              <a class="dropdown-item" href="#">Events Calendar</a>
-              <a class="dropdown-item" href="#">Past Events</a>
-            </div>
-
-          <li class="nav-item dropdown mr-3">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes</a>
-            <div class="dropdown-menu dropdown-menu mt-0" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Adult Classes</a>
-              <a class="dropdown-item" href="#">Classes for Children</a>
-              <a class="dropdown-item" href="#">Private Lessons</a>
-              <a class="dropdown-item" href="#">Corporate Learning</a>
-            </div>
-          
-          <li class="nav-item dropdown mr-3">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Membership</a>
-            <div class="dropdown-menu dropdown-menu mt-0" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Membership Benefits</a>
-              <a class="dropdown-item" href="#">Join</a>
-              <a class="dropdown-item" href="#">Newsletter Sign-up</a>
-            </div>
-          
-          <li class="nav-item dropdown mr-3">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About&nbsp;us</a>
-            <div class="dropdown-menu dropdown-menu-right mt-0" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">About us</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-            </div>
-          
-        </ul>
-      </div>
-    </nav>
-    <img  style="display:block;" src="/src/flapstrip.PNG" alt="flag" width="100%" height="15px"/>
-
+   <!--Navigation bar---------------------------------------->
+   <div id="nav-placeholder">
+    </div>
+   
+  <!-- Carousel ----------start ----------------- -->
     <div id="frenchCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="margin-bottom: 75px;">
       <ol class="carousel-indicators">
         <li data-target="#frenchCarousel" data-slide-to="0" class="active">
@@ -110,6 +61,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  <!-- Carousel ----------start ----------------- -->
 
     <div class="jumbotron jumbotron-fluid" style="margin-bottom: 75px;">
       <div class="container" >
@@ -119,6 +71,7 @@
       </div>
     </div>
 
+  <!-- Cards ----------start ----------------- -->
     <div class="container" style="margin-bottom: 75px;">
       <div class="row">
         <div class="card col-sm">
@@ -154,15 +107,16 @@
       </div>
     </div>
 
+      <!-- Sponsors ----------start ----------------- -->
     <div style="width: 100%">
       <img src="/src/sponsors.PNG" alt="sponsors">
     </div>
 
+      <!-- Scripts ----------start ----------------- -->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -173,13 +127,18 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      jQuery.get("nav.html", function(data){
+          jQuery("#nav-placeholder").replaceWith(data);
+      });
+      </script>
   </body>
 
   <footer class="footer">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm" style="font-weight: 400; text-align: left;">
-          <p><strong>Links</strong></p>
+          <p ><strong>Links</strong></p>
           <ul style="list-style-type:none; text-align: left; padding-left: 0;" >
             <li><a style="color:black;" href="https://www.cincinnatisistercity.org/" target="_blank">Cincinnati Sister Cities</a></li>
             <li><a style="color:black;" href="http://www.cincyworldcinema.org/" target="_blank">Cincinnati World Cinema</a></li>
@@ -187,7 +146,7 @@
             <li><a style="color:black;" href="https://www.alliancefr.org/en/who-are-we/alliance-francaise-paris-ile-de-france" target="_blank">L’Alliance Française de Paris, Ile-de-France</a></li>
         </ul>
         </div>
-        <div class="col-sm" style="font-weight: 400; text-align: left;">
+        <div class="col-sm" style="font-weight: 400; text-align: center;">
           <p><strong>Join us on social media</strong></p>
           <a href="https://www.facebook.com/afcincinnati/" target="_blank"><img class="social" src="/src/facebook.png" alt="facebook"></a>
           <a href="#" target="_blank"><img class="social" src="/src/twitter.png" alt="twitter"></a>

@@ -5,15 +5,6 @@ body {
   padding: 0;
   text-align: center;
 }
-.btn-warning, .btn-warning:active,
-.btn-warning:visited, .btn-warning:focus,
-.btn-warning:active:focus {
-    background-color: #FC7E27;
-    border-color: #FC7E27}
-
-.btn-warning:hover {
-    background-color: #ea700c;
-    border-color: #ea700c}
 
 .neg_margin {
   margin-top: -51px;
@@ -112,7 +103,7 @@ img .social{
   padding:20px;
   font-weight: 100;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   background-color: #868e96;
 }
 

@@ -42,15 +42,17 @@ body {
   display: block;
 }
 
-.transbox {
-  margin: 150;
-  background-color:white;
-  opacity: .6;
+.transparent_box {
+  max-width: 70%;
+  background: rgba(255,255,255,0.3);
+  /* opacity: .3; */
+  color:white;
 }
 
-.transbox p h3 {
+.transparent_box h1 p {
   margin: 10%;
-  color:black;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .card-footer {
@@ -87,6 +89,17 @@ img .social{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.jumbo_page {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
 }
 
 .sponsors {

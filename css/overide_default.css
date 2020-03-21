@@ -91,6 +91,8 @@ img.social{
   transform: translate(-50%, -50%);
 }
 
+/* -------------- Membership Page * ----------------- */
+
 .jumbo_page {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -99,9 +101,29 @@ img.social{
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+  border-radius: 0;
 
 }
 
+.membership li {
+  margin: 10px;
+}
+
+.benefits {
+display: inline-block;
+float: right;
+background: #343434 ;
+color: #f7fff7;
+width: 400px;
+line-height: 1.2;
+padding: 20px;
+font-weight: 300;
+font-size: larger;
+text-align:left;
+margin: -40px 10% 90% 0px;
+
+}
+/* -------------- Sponsor * ----------------- */
 .sponsors {
   margin:30px 0px;
   padding: 10px;
@@ -110,6 +132,8 @@ img.social{
   width: 100%;
 }
 
+
+/* -------------- Sponsor * ----------------- */
 .footer {
   /* position: absolute;
   bottom: 0; */

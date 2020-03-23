@@ -106,22 +106,34 @@ img.social{
 }
 
 .membership li {
-  margin: 10px;
+   margin: 15px; /*distance beteen bullet lines */
 }
+
 
 .benefits {
 display: inline-block;
-float: right;
 background: #343434 ;
 color: #f7fff7;
-width: 400px;
+width: 250px;
 line-height: 1.2;
-padding: 20px;
 font-weight: 300;
-font-size: larger;
 text-align:left;
-margin: -40px 10% 90% 0px;
 
+/* position:absolute;
+top: 25px;
+left: 25px;
+z-index: 2; */
+
+}
+
+.fishes
+{
+  margin-top: 40px;
+  /* position:absolute; */
+  /* top: 10px;
+  left: 10px;
+  z-index: 1; */
+  display: inline-block;
 }
 /* -------------- Sponsor * ----------------- */
 .sponsors {

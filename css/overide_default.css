@@ -111,7 +111,7 @@ img.social{
 
 #overlap-block{
   margin-top: 60px;
-  width:800px;
+  max-width:width:800px;
   height:600px;
   text-align: center;
   position:relative;
@@ -125,7 +125,7 @@ img.social{
   font-weight: 300;
   text-align:left;
   top:-50px;
-  left:600px;
+  left:70%;
   position:absolute;
   }
 

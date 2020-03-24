@@ -109,31 +109,48 @@ img.social{
    margin: 15px; /*distance beteen bullet lines */
 }
 
+#overlap-block{
+  margin-top: 60px;
+  width:800px;
+  height:600px;
+  text-align: center;
+  position:relative;
+}
 
-.benefits {
-display: inline-block;
+#c3{
+  background: #343434 ;
+  color: #f7fff7;
+  width: 250px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align:left;
+  top:-50px;
+  left:600px;
+  position:absolute;
+  }
+
+
+/* .benefits {
 background: #343434 ;
 color: #f7fff7;
 width: 250px;
 line-height: 1.2;
 font-weight: 300;
 text-align:left;
-
-/* position:absolute;
+position:absolute;
 top: 25px;
 left: 25px;
-z-index: 2; */
-
-}
+z-index: 1;
+} */
 
 .fishes
 {
   margin-top: 40px;
-  /* position:absolute; */
-  /* top: 10px;
+  position: relative;
+  top: 10px;
   left: 10px;
-  z-index: 1; */
-  display: inline-block;
+  z-index: 2;
+
 }
 /* -------------- Sponsor * ----------------- */
 .sponsors {

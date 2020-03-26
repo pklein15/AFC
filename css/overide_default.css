@@ -6,6 +6,17 @@ body {
   text-align: center;
 }
 
+/* About us ------------------- */
+.cover-container {
+  min-height:100vh;
+  background-image: url(../src/cincy2.jpg);
+  background-size: cover;
+}
+
+
+
+/* Index ------------------------ */
+
 .neg_margin {
   margin-top: -51px;
   margin-left: 50px;
@@ -32,12 +43,6 @@ body {
   background-color: gray;
 }
 
-/* .dropdown:hover>.dropdown-menu {
-  display: block;
-} 
-.dropdown > .dropdown-toggle:active {
-    pointer-events: none;
-} */
 .navbar-nav li:hover .dropdown-menu {
   display: block;
 }
@@ -71,13 +76,6 @@ body {
     font-size: 1em; 
 }
 
-/* .col-sm {
-  position: relative;
-  font-weight: bold;
-  text-align: center;
-  color:black;
-  margin-bottom: 30px;
-} */
 
 img.social{
   height: 40px;

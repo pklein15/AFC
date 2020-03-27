@@ -10,15 +10,49 @@
 
     <link rel="stylesheet" href="css/overide_default.css" />
     <title>AFC Calendar</title>
-
+ 
+    <style>
+      @media (max-width: 550px) {
+         .big-container {
+             display: none;
+         }
+      }
+      @media (min-width: 550px) {
+         .small-container {
+             display: none;
+         }
+      }
+      /* Responsive iFrame */
+      .responsive-iframe-container {
+         position: relative;
+         padding-bottom: 56.25%;
+         padding-top: 30px;
+         height: 0;
+         overflow: hidden;
+      }
+      .responsive-iframe-container iframe,   
+      .vresponsive-iframe-container object,  
+      .vresponsive-iframe-container embed {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+      </style>
+      
   <body>
 
    <!--Navigation bar---------------------------------------->
    <div id="nav-placeholder">
   </div>
 
-<div class="container-fluid calendar">
-  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23012291&amp;ctz=America%2FNew_York&amp;src=dDR1OTB2YTNzNzFhM3Uwa2lyZmxiazZrZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showTabs=0&amp;showDate=1" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<div class="calendar responsive-iframe-container big-container ">
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23012291&amp;ctz=America%2FNew_York&amp;src=dDR1OTB2YTNzNzFhM3Uwa2lyZmxiazZrZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showTabs=0&amp;showDate=1" style="border:solid 1px #777" width="100%" height="650" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="responsive-iframe-container small-container calendar">
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23012291&amp;ctz=America%2FNew_York&amp;src=dDR1OTB2YTNzNzFhM3Uwa2lyZmxiazZrZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showTabs=0&amp;showDate=1" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
           <!-- Scripts ----------start ----------------- -->

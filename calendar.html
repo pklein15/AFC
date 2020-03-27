@@ -6,48 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap core CSS -->
     <link
-      rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+      <!-- rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/> -->
 
-    <link rel="stylesheet" href="css/overide_default.css" />
+    <!-- <link rel="stylesheet" href="css/overide_default.css" /> -->
     <title>AFC Calendar</title>
  
-    <style>
-      @media (max-width: 550px) {
-         .big-container {
-             display: none;
-         }
-      }
-      @media (min-width: 550px) {
-         .small-container {
-             display: none;
-         }
-      }
-      /* Responsive iFrame */
-      .responsive-iframe-container {
-         position: relative;
-         padding-bottom: 56.25%;
-         padding-top: 30px;
-         height: 0;
-         overflow: hidden;
-      }
-      .responsive-iframe-container iframe,   
-      .vresponsive-iframe-container object,  
-      .vresponsive-iframe-container embed {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-      }
-      </style>
+<style>
+@media (max-width: 550px) {
+    .big-container {
+        display: none;
+    }
+}
+@media (min-width: 550px) {
+    .small-container {
+        display: none;
+    }
+}
+/* Responsive iFrame */
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
       
   <body>
 
    <!--Navigation bar---------------------------------------->
-   <div id="nav-placeholder">
-  </div>
+   <!-- <div id="nav-placeholder">
+  </div> -->
 
-<div class="calendar responsive-iframe-container big-container ">
+<div class="calendar responsive-iframe-container big-container" style="margin:40px">
   <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23012291&amp;ctz=America%2FNew_York&amp;src=dDR1OTB2YTNzNzFhM3Uwa2lyZmxiazZrZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showTabs=0&amp;showDate=1" style="border:solid 1px #777" width="100%" height="650" frameborder="0" scrolling="no"></iframe>
 </div>
 
@@ -56,7 +56,7 @@
 </div>
 
           <!-- Scripts ----------start ----------------- -->
-          <script
+          <!-- <script
           src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
           crossorigin="anonymous"></script>
@@ -74,7 +74,7 @@
           jQuery.get("nav.html", function(data){
               jQuery("#nav-placeholder").replaceWith(data);
           });
-          </script>
+          </script> -->
   </body>
 
 </html>

@@ -13,9 +13,7 @@ body {
 }
 /* -------------- Calendar * ----------------- */
 .calendar {
-  padding: 40px;
   background-color: #e0e0e0;
-  min-height: 100vh;
 }
 
 /* Home Page ------------------------ */

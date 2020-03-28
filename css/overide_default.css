@@ -24,6 +24,15 @@ body {
   background-color: #e8ecec ;
   line-height: .2;
   font-weight: 500;
+  text-align: center;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 760px) {
+.square-date{
+  margin-left: 2%!important;
+}
+
 }
 
 

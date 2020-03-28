@@ -16,6 +16,17 @@ body {
   background-color: #e0e0e0;
 }
 
+/* Events Page ------------------------ */
+.square-date {
+  width:70px;
+  height:70px;
+  padding: 25px 10px 10px;
+  background-color: #e8ecec ;
+  line-height: .2;
+  font-weight: 500;
+}
+
+
 /* Home Page ------------------------ */
 
 .neg_margin {

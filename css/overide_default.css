@@ -18,29 +18,26 @@ body {
 
 /* Events Page ------------------------ */
 .square-date {
-  width:70px;
-  height:70px;
+  width: 70px;
+  height: 70px;
   padding: 25px 10px 10px;
-  background-color: #e8ecec ;
-  line-height: .2;
+  background-color: #e8ecec;
+  line-height: 0.2;
   font-weight: 500;
   text-align: center;
   margin-left: auto;
 }
 
 @media only screen and (max-width: 760px) {
-.square-date{
-  margin-left: 2%!important;
-}
+  .square-date {
+    margin-left: 2% !important;
+  }
 
-/* .aclass{
+  /* .aclass{
   background-color: lightyellow;
   margin-left: 2%!important;
 } */
-
-
 }
-
 
 /* Home Page ------------------------ */
 
@@ -153,14 +150,15 @@ img.social {
 
 @media only screen and (max-width: 600px) {
   #benefits {
+    display: none;
     top: 0;
     left: 0;
     position: relative;
-    margin: auto;
+    margin: left;
   }
 
   #c2 {
-    width: 100%;
+    max-width: 80%;
   }
 }
 

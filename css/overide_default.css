@@ -150,15 +150,19 @@ img.social {
 
 @media only screen and (max-width: 600px) {
   #benefits {
-    display: none;
     top: 0;
     left: 0;
     position: relative;
-    margin: left;
+    margin: auto;
   }
 
   #c2 {
-    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  #overlap-block {
+    width: 100%;
   }
 }
 

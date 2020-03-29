@@ -33,10 +33,6 @@ body {
     margin-left: 2% !important;
   }
 
-  /* .aclass{
-  background-color: lightyellow;
-  margin-left: 2%!important;
-} */
 }
 
 /* Home Page ------------------------ */
@@ -234,18 +230,11 @@ body .featurette {
   margin-left: auto;
 }
 
-/* .aclass p {
-  display: flex;  
-  flex-wrap: wrap;
-} */
-
 /* -------------- Sponsor * ----------------- */
 
 #sponsors {
-  /* background: url(images/sponsorsbkg.gif) top no-repeat; */
   width: 100%;
   height: 180px;
-  /* margin-bottom: -10px; */
   padding: 20px;
   }
   
@@ -253,22 +242,23 @@ body .featurette {
   font-size: 20px;
   text-align: center;
   color: #343434;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
   padding: 15px 0px 0px 0px;
   }
   
-  #sponsors  ul {
+  #sponsors.ul {
   list-style-type: none;
   padding: 5px 0px;
-    display: flex;
-    flex-flow: row;
-    align-content: space-around;
+  display: flex;
+  flex-flow: row;
+  align-content: space-around;
+  text-align: center;
   }
   
-  #sponsors ul li {
+  #sponsors li {
   list-style-type: none;
   padding: 0px 0px 0px 0px;
-  display: inline;
+  display: inline-block;
   }
   
   /*
@@ -285,6 +275,12 @@ body .featurette {
   }
   }
   
+#sponsor_page {
+/* background-image: url(../src/afpng.png); */
+/* background-size: 100%; */
+/* background-color: #343434 */
+
+  }
 /* -------------- footer * ----------------- */
 .footer {
   /* color: #343434; */

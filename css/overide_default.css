@@ -6,17 +6,20 @@ body {
 }
 
 /* About us ------------------- */
+
 .cover-container {
   min-height: 100vh;
   background-image: url(../src/cincy2.jpg);
   background-size: cover;
 }
+
 /* -------------- Calendar * ----------------- */
 .calendar {
   background-color: #e0e0e0;
 }
 
 /* Events Page ------------------------ */
+
 .square-date {
   width: 70px;
   height: 70px;
@@ -238,7 +241,7 @@ body .featurette {
   padding: 20px;
   }
   
-  #sponsors h6 {
+#sponsors h6 {
   font-size: 20px;
   text-align: center;
   color: #343434;
@@ -246,7 +249,7 @@ body .featurette {
   padding: 15px 0px 0px 0px;
   }
   
-  #sponsors.ul {
+#sponsors.ul {
   list-style-type: none;
   padding: 5px 0px;
   display: flex;
@@ -255,7 +258,7 @@ body .featurette {
   text-align: center;
   }
   
-  #sponsors li {
+#sponsors li {
   list-style-type: none;
   padding: 0px 0px 0px 0px;
   display: inline-block;
@@ -264,12 +267,12 @@ body .featurette {
   /*
   ** Space images evenly (up to 9 sponsor images)
   */
-  #sponsors ul li a img {
+#sponsors ul li a img {
   width: 105px;
   text-align: center;
   }
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #sponsors {
     display:none;
   }
@@ -285,14 +288,10 @@ body .featurette {
 #sponsor_page2 {
   background-image: url(../src/picnic.jpg);
   opacity: .85;
-  /* top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1;  */
   }
+
 /* -------------- footer * ----------------- */
+
 .footer {
   /* color: #343434; */
   padding: 20px;

@@ -9,7 +9,7 @@
       rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="css/overide_default.css" />
-    <title>AFC Skeleton</title>
+    <title>AFC Checkout</title>
 
   <body>
 
@@ -24,40 +24,45 @@
 
 <!-- &disable-funding=credit -->
 
-<div class="container mt-5 pt-3" style="width: 300px; background-color: lightgray;">
-  <div id="paypal-button-container"></div>
+<div class="container mt-5 pt-3" style="background-color: lightgray;">
+  <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <div id="paypal-button-container">
+          <script>
+            paypal.Buttons({
 
-  <script>
-    paypal.Buttons({
-
-      style:{
-        color: 'blue',
-        shape: 'rect',
-        // label: 'pay',
-        height: 40
-      },
+              style:{
+                color: 'blue',
+                shape: 'rect',
+                // label: 'pay',
+                height: 40
+              },
 
 
-      createOrder: function(data, actions) {
-        // This function sets up the details of the transaction, including the amount and line item details.
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '20.00'
-            }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        // This function captures the funds from the transaction.
-        return actions.order.capture().then(function(details) {
-          // This function shows a transaction success message to your buyer.
-          alert('Transaction completed by ' + details.payer.name.given_name);
-        });
-      }
-    }).render('#paypal-button-container');
-    //This function displays Smart Payment Buttons on your web page.
-  </script>
+              createOrder: function(data, actions) {
+                // This function sets up the details of the transaction, including the amount and line item details.
+                return actions.order.create({
+                  purchase_units: [{
+                    amount: {
+                      value: '20.00'
+                    }
+                  }]
+                });
+              },
+              onApprove: function(data, actions) {
+                // This function captures the funds from the transaction.
+                return actions.order.capture().then(function(details) {
+                  // This function shows a transaction success message to your buyer.
+                  alert('Transaction completed by ' + details.payer.name.given_name);
+                });
+              }
+            }).render('#paypal-button-container');
+            //This function displays Smart Payment Buttons on your web page.
+          </script>
+      </div>
+    </div>
+</div>
 </div>
 
 

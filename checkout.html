@@ -12,21 +12,25 @@
     <title>AFC Checkout</title>
 
   <body>
+  
+    <script src="https://www.paypal.com/sdk/js?client-id=AT0E5u2fNnHNLP55gL0NDZiVX1L_Edjc2vO7ty7WkLt2CQ7bsvCDSiPXmyEus4rKmoX7xInWnMcivwKg">
+    </script>
 
    <!--Navigation bar---------------------------------------->
    <div id="nav-placeholder">
   </div>
 
   
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=AT0E5u2fNnHNLP55gL0NDZiVX1L_Edjc2vO7ty7WkLt2CQ7bsvCDSiPXmyEus4rKmoX7xInWnMcivwKg"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
-  </script>
+
 
 <!-- &disable-funding=credit -->
 
+
+
 <div class="container mt-5 pt-3" style="background-color: lightgray;">
   <div class="row">
-    <div class="col-md-8"></div>
+    <div class="col-md-8 lefty" style="font-size: 50px;">
+    </div>
     <div class="col-md-4">
       <div id="paypal-button-container">
           <script>
@@ -45,7 +49,7 @@
                 return actions.order.create({
                   purchase_units: [{
                     amount: {
-                      value: '20.00'
+                      value: category.price
                     }
                   }]
                 });
@@ -67,6 +71,13 @@
 
 
           <!-- Scripts ----------start ----------------- -->
+          <script>
+            let category = JSON.parse(sessionStorage.getItem("level"));
+            console.log(category.price);
+            leveltext = document.querySelector('.lefty');
+            leveltext.innerHTML = '<h1>category.level</h1>'
+            leveltext.innerText = category.level;;
+          </script>
           <script
           src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -81,6 +92,28 @@
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
           crossorigin="anonymous"
         ></script>
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+    
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+    
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+        </script>
         <script>
           jQuery.get("nav.html", function(data){
               jQuery("#nav-placeholder").replaceWith(data);

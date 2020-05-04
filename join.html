@@ -17,13 +17,6 @@
    <div id="nav-placeholder">
   </div>
 
-    <!-- <div class="jumbotron jumbo_page" style="background-image: url(./src/louvre_mem2.jpg); width: 100%; margin-bottom: 75px">
-        <div class="container transparent_box mt-5" style='  background: rgba(255,255,255,0.3);'>
-          <h1 style="font-weight: 300;">EXPAND YOUR WORLD</h1>
-          <p class="lead"><strong>Instantly connect with the more than 800 Alliance Française centers across the globe. With the headquarters in Paris, the Alliance Française currently educates more than 500,000 students in 132 countries.</strong></p>
-        </div>
-    </div> -->
-
     <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
       <div class="container" >
         <h1 class="display-4">Join Us!</h1>
@@ -38,7 +31,7 @@
     <div class="container">
   
       <div class="row">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 mem_card">
           <div class="card mb-4 shadow-sm bg-light" >
             <img class='card-img-top img-fluid' src="/src/croissant-and-coffee.jpg" alt="cheese tray" >
             <div class="card-body">
@@ -48,57 +41,57 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 mem_card">
           <div class="card mb-4 shadow-sm" >
           <img class='img-fluid' src="/src/street.jpg" alt="street" style="width: 100%; height: auto">
             <div class="card-body">
               <p class="card-text text-muted">Individual - Family</p>
               <p class="card-text text-muted">$75</p>
-              <button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button>
+              <a href="checkout.html"><button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button></a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 mem_card">
           <div class="card mb-4 shadow-sm" >
           <img class='img-fluid' src="/src/bridge.jpg" alt="bridge" style="width: 100%; height: auto">
             <div class="card-body">
               <p class="card-text text-muted">Individual - Sponsor</p>
               <p class="card-text text-muted">$95</p>
-              <button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button>
+              <a href="checkout.html"><button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button></a>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 mem_card">
           <div class="card mb-4 shadow-sm" >
             <img class='card-img-top img-fluid' src="/src/fountain.jpg" alt="fountain" >
             <div class="card-body">
               <p class="card-text text-muted">Corporate - Level 1</p>
               <p class="card-text text-muted">Includes two memberships plus your corporate logo displayed on the Alliance website.</p>
               <p class="card-text text-muted">$175</p>
-              <button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button>
+              <a href="checkout.html"><button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button></a>
             </div>
           </div>
         </div>
-     <div class="col-md-4 mb-4">
+     <div class="col-md-4 mb-4 mem_card">
           <div class="card mb-4 shadow-sm" >
           <img class='img-fluid' src="/src/cheese-tray-1433504_1920.jpg" alt="croisant" style="width: 100%; height: auto">
             <div class="card-body">
               <p class="card-text text-muted">Corporate - Level 2</p>
               <p class="card-text text-muted">Includes Corporate 1 benefits plus your corporate logo displayed on emails in the sponsor area.</p>
               <p class="card-text text-muted">$275</p>
-              <button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button>
+              <a href="checkout.html"><button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button></a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 mem_card">
           <div class="card mb-4 shadow-sm" >
           <img class='img-fluid' src="/src/building.jpg" alt="building" style="width: 100%; height: auto">
             <div class="card-body">
               <p class="card-text text-muted">Corporate - Level 3</p>
-              <p class="card-text text-muted">Includes Corporate 2 benefits plus a sponsor recognition poster at Alliance events.</p>
+              <p class="card-text text-muted">Includes Corporate 2 benefits plus a sponsor recognition poster at Alliance Française events.</p>
               <p class="card-text text-muted">$500</p>
-              <button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button>
+              <a href="checkout.html"><button type="button" class="btn btn-sm btn-secondary btn-block ">&nbsp&nbspJoin&nbsp&nbsp</button></a>
             </div>
           </div>
         </div>  
@@ -125,6 +118,8 @@
           jQuery.get("nav.html", function(data){
               jQuery("#nav-placeholder").replaceWith(data);
           });
+          </script>
+          <script src="js/main.js">
           </script>
   </body>
 
